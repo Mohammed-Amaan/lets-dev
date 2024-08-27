@@ -1,83 +1,176 @@
-.header{
-    background-color:black;
-    color:white;
-    margin:0;
-    padding:5px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  .header li{
-    display: inline;
-    margin: 0 20px;
-  }
-  #header-links{
-    list-style: none;
-  }
-  .hero-text{
-    width: 50%;
-    padding: 10px;
-  }
-  .hero-text h1 {
-    font-size: 3rem; /* Adjust the font size as needed */
-    line-height: 1.2; /* Adjust the line height as needed */
+/*Base css for all sizes and mobile */
+html{
+  margin: 0;
+  padding: 0;
+  font-size:14px;
+}
+h1{
+  font-size: 2.5rem;
+}
+h3{
+  font-size:1.75rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F8F0E5;
+ font-family: 'Roboto', sans-serif;
+ }
+ .logo{
+  height: 70px;
+ }
+ .header-container{
+  background-color:black;
+  color:white;
+  margin:0;
+  padding:2px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.header-container a{
+  text-decoration: none;
+  color: white;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+.hero-text{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
-.hero-text h1 span {
-    display: block; /* Display each span on a new line */
+.hero-image{
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
 }
-  .hero-image{
-    width: 50%;
-    margin: 10px;
+.hero-image img{
+  width: 100%;
+  border-radius: 5%;
+  height: 350px;
+}
+#customized{
+  text-align: center;
+}
+
+.cards img {
+  width: 100%; /* Make the image fill the card width */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+.cards {
+  flex: 1; /* Allow each card to grow equally */
+  margin: 10px; /* Add some margin between cards */
+  text-align: center; /* Center text inside the card */
+  overflow: hidden; /* Hide any overflow from images */
+}
+#card-container{
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.second-hero{
+  text-align: center;
+  max-width: 1200px;
+  margin: 35px auto;
+}
+.cards a{
+  text-decoration: none;
+  color: black;
+}
+#subscribe{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  text-align: center;
+  margin: 20px auto;
+  justify-content: center;
+}
+#subscribe-text{
+  width: 100%;
+}
+#subscribe-form{
+  width: 100%;
+}
+.form{
+  display: flex;
+  justify-content: center;
+}
+.form button{
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+}
+#footer{
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+/* For Tablets */
+@media screen and (min-width:576px){
+  html{
+    font-size: 14px;
   }
-  .hero-image img{
-    width: 100%;
-    border-radius: 5%;
+  .hero-image{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+}
+/* For laptop */
+@media screen and (min-width:768px){
+  html{
+    font-size: 16px;
   }
   .hero{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 10px auto;
     max-width: 1200px;
   }
-  #customized{
+  .hero-text{
+    width: 50%;
     text-align: center;
+    padding: 10px;
   }
-  .cards img {
-    width: 100%; /* Make the image fill the card width */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Cover the area while maintaining aspect ratio */
-}
-  .cards {
-    flex: 1; /* Allow each card to grow equally */
-    margin: 10px; /* Add some margin between cards */
-    text-align: center; /* Center text inside the card */
-    overflow: hidden; /* Hide any overflow from images */
-}
-  #card{
+  
+  .hero-image{
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+  #card-container{
     display: flex;
+    flex-direction: row;
     margin: 5px auto;
     max-width: 1200px;
     justify-content: space-between;
-  }
-  .second-hero{
-    text-align: center;
-    max-width: 1200px;
-    margin: 35px auto;
-  }
-  #testimonial{
-    text-align: center;
-    max-width: 1200px;
-    margin: 35px auto;
-    background-color: aquamarine;
-  }
-  .cards a{
-    text-decoration: none;
-    color: black;
+    margin: 10px auto;
   }
   #subscribe{
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
-    text-align: left;
+    text-align: center;
     margin: 20px auto;
+    justify-content: center;
   }
   #subscribe-text{
     width: 60%;
@@ -87,22 +180,65 @@
   }
   .form{
     display: flex;
+    justify-content: center;
   }
-  .form button{
-    margin-left: 20px;
-    background-color: black;
-    color: white;
-  }
-  #footer{
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
-  }
-body{
- margin: 0;
- padding: 0;
- background-color: #F8F0E5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* For Desktop */
+@media screen and (min-width:992px){
+  html{
+    font-size: 16px;
+  }
+  .hero{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    max-width: 1200px;
+  }
+  .hero-text{
+    width: 60%;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .hero-image{
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+  #card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 10px auto;
+  }
+  #subscribe{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    text-align: left;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #subscribe-text{
+    width: 60%;
+  }
+  #subscribe-form{
+    width: 40%;
+  }
+  .form{
+    display: flex;
+    justify-content: left;
+  }
+}
+
+
+  
+  
+  
+  
+
+  
