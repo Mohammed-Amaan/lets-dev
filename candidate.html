@@ -50,9 +50,24 @@
         h3{
             color: white;
         }
-        .btn-secondary{
-            background-color: #4b3832;
-        }
+        .btn-primary {
+  background-color: #c4ac80; /* Set the background color */
+  border-color: #c4ac80; /* Set the border color */
+  color: white; /* Set the text color */
+}
+
+.btn-primary:hover {
+  background-color: #c4ac80; /* Set the hover background color */
+  border-color: #3a2a26; /* Set the hover border color */
+  color: white; /* Set the hover text color */
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #4b3832 !important; /* Set the focus and active background color */
+  border-color: #4b3832 !important; /* Set the focus and active border color */
+  box-shadow: none !important; /* Remove the focus outline */
+}
         
     </style>
 </head>
@@ -117,9 +132,9 @@
         </div>
         <div class="col-md-4 mb-4">
             <div class="h-100 d-flex flex-column text-white p-4" style="background-color: #4b3832;">
-                <h3 class="mb-3 text-center">Cultural Immersion Programs</h3>
-                <p class="text-start">Fincasa HR offers customized Cultural Immersion Programs to expand your global perspective. Our International Educational Cultural Immersion Programs immerse participants in diverse cultures and education systems worldwide. These structured initiatives foster cross-cultural understanding, global mindsets, and personal growth.</p>
-                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <h3 class="mb-3 text-center">Job Vacancies</h3>
+                <p class="text-start">At Fincasa HR, we are dedicated to connecting top talent with leading employers across various industries. As a prominent HR consultancy, we continually seek skilled professionals who are passionate about driving success in the world of work. Explore our current job vacancies and discover exciting opportunities to advance your career with us.</p>
+                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     Learn More >
                 </a>
             </div>
@@ -128,7 +143,7 @@
             <div class="h-100 d-flex flex-column text-white p-4" style="background-color: #4b3832;">
                 <h3 class="mb-3 text-center">Masterclass and Workshops</h3>
                 <p class="text-start text-light">In today's competitive environment, leadership is a strategic asset. Our leadership development program cultivates essential leadership qualities, empowering your team to inspire, innovate, and succeed.</p>
-                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                     Learn More >
                 </a>
             </div>
@@ -179,15 +194,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">Cultural Immersion Programs</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel2">Job Vacancies</h5>
+                <button type="button" class="btn-close btn btn-primary" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-                <p>At Fincasa HR, we specialize in crafting bespoke Cultural Immersion Programs to broaden your horizons. An International Educational Cultural Immersion Program is a structured initiative designed to provide participants with firsthand experience and insights into diverse cultures and educational systems worldwide. These programs aim to promote cross-cultural awareness, global citizenship and personal and professional development.</p>
-
-                <p class="text-bold">Break Down Barriers, Build Bridges</p>  
-                
-                <p>In today's interconnected world, cultural fluency is an esential skill. Our Cultural Immersion Programs break down cultural barriers and cultivate a sense of understanding, respect and collaboration among students from varied backgrounds. Are you ready to embark on a transformative journey? Partner with Fincasa HR Consulting and unlock the full potential of your global talent. Contact us today!</p> 
+                <p>For current openings,click here!</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>

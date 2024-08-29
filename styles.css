@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F8F0E5;
+  background-color: #F8F0E5; 
   font-family: 'Roboto', sans-serif; /* Apply Roboto for body text */
   font-weight: 400;
 }
@@ -9,4 +9,42 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; /* Apply Montserrat for headings */
   font-weight: 500;
+  color: #4b3832;
+}
+.btn-primary {
+  background-color: #c4ac80; /* Set the background color */
+  border-color: #c4ac80; /* Set the border color */
+  color: white; /* Set the text color */
+}
+
+.btn-primary:hover {
+  background-color: #c4ac80; /* Set the hover background color */
+  border-color: #3a2a26; /* Set the hover border color */
+  color: white; /* Set the hover text color */
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #4b3832 !important; /* Set the focus and active background color */
+  border-color: #4b3832 !important; /* Set the focus and active border color */
+  box-shadow: none !important; /* Remove the focus outline */
+}
+
+.dropdown-menu {
+  background-color: #4b3832; /* Dropdown menu background color */
+  animation: fadeIn 0.3s ease-in-out; /* Add dropdown animation */
+  border: none; /* Optional: remove border */
+}
+
+.dropdown-item {
+  color: white; /* Set text color for dropdown items */
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu */
+}
+.dropdown-toggle::after {
+  display: none; /* Remove the default dropdown arrow */
+}
+footer{
+  background-color: #4b3832;
 }
