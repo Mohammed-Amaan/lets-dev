@@ -41,36 +41,57 @@
   font-weight: 500;
   font-style: normal;
 }
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     </style>
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                            <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                            <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                            <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!--hero-->
     <div class="hero bg-light py-5">
       <div class="container">
@@ -140,17 +161,17 @@
     
     <!--subscribe-->
 
-    <div id="subscribe" class="bg-dark py-5">
+    <div id="subscribe" class="py-5" style="background-color: #4b3832;">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
               <div id="subscribe-text">
-                <h2 class="text-white">Stay Updated with Fincasa HR</h2>
+                <h3 class="text-white">Stay Updated with Fincasa HR</h3>
               </div>
             </div>
             <div class="col-md-6">
               <div id="subscribe-form">
-                <h3 class="text-white">Get the latest job openings, industry news, and company events.</h3>
+                <h4 class="text-white">Get the latest job openings, industry news, and company events.</h4>
                 <div class="form">
                   <form action="">
                     <input type="text" placeholder="Enter email address" class="form-control" />
@@ -163,7 +184,7 @@
         </div>
       </div>
     <!--footer-->
-    <footer class="bg-dark py-3">
+    <footer class="py-3" style="background-color: #4b3832;">
       <div class="container">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
