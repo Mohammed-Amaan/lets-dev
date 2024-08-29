@@ -30,59 +30,56 @@
       .lead {
         font-weight: 400;
       }
+      .text-left{
+        text-align: justify; /* Align text to the left */
+    text-justify: inter-word;
+      }
+    
     </style>
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./services.html"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./testimonials.html"
-                >Testimonials</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-5" href="./services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                  <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                  <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                  <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!--body-->
     <main>
       <section class="hero">
         <div class="px-4 my-5 text-center">
-          <h1 class="display-4 ">Our Services</h1>
+          <h1 class="display-4 mb-3">Our Services</h1>
           <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">
+            <p class="lead mb-2 text-left">
               At Fincasa HR, we serve as a vital conduit between exceptional
               talent and esteemed employers, fostering a thriving professional
               ecosystem. Our comprehensive suite of services is meticulously
@@ -122,7 +119,7 @@
             </div>
             <div class="col-lg-6">
               <h1 class="display-5  lh-1 mb-3">For Employers</h1>
-              <p class="lead">
+              <p class="lead emp">
                 We provide strategic solutions tailored to assist you in
                 identifying and nurturing the finest talent for your
                 organization. Our offerings include executive search, talent
@@ -132,7 +129,7 @@
                 customized solutions that drive your success.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="./employer.html" class="btn"> Learn More > </a>
+                <a href="./employer.html" class="btn btn-primary"> Learn More > </a>
               </div>
             </div>
           </div>
@@ -163,14 +160,14 @@
             your chosen field.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="./candidate.html" class="btn"> Learn More > </a>
+            <a href="./candidate.html" class="btn btn-primary"> Learn More > </a>
           </div>
         </div>
       </div>
     </div>
     <!--footer-->
     <div class="container-fluid px-0">
-      <footer class="bg-dark py-3 my-0">
+      <footer class="py-3 my-0">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="./index.html" class="nav-link px-2 text-white">Home</a>

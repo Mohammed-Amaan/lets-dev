@@ -33,17 +33,6 @@
       section {
         margin-bottom: 40px;
       }
-
-      h2 {
-        color: #333;
-      }
-
-      footer {
-        background-color: #f2f2f2;
-        padding: 20px;
-        text-align: center;
-      }
-
       .logo {
         height: 70px;
       }
@@ -51,48 +40,40 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./services.html"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./testimonials.html"
-                >Testimonials</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-5" href="./services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                  <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                  <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                  <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <main>
       <section>
@@ -153,7 +134,7 @@
       </section>
     </main>
     <div class="container-fluid px-0">
-      <footer class="bg-dark py-3 my-0">
+      <footer class="py-3 my-0">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="./index.html" class="nav-link px-2 text-white">Home</a>
