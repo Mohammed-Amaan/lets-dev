@@ -23,7 +23,7 @@
 }
 .bg-image {
             position: relative; /* Create a positioning context for the text */
-            background-image: url('./images/modern-businesswoman-looking-away.jpg'); /* Replace with your image path */
+            background-image: url('https://img.freepik.com/free-photo/man-confessing-front-other-patients_23-2148398434.jpg?t=st=1724925950~exp=1724929550~hmac=ba75ffb5d565afb3952906733e267a462c8ac1935684731a349ae9aa286b8274&w=1060'); /* Replace with your image path */
             background-size: cover; /* Cover the entire container */
             background-position: center; /* Center the image */
             color: whitesmoke; /* Set text color to white for contrast */
@@ -39,12 +39,26 @@
             font-weight: bold; /* Make the heading text bold */
             text-align: center; /* Center the text */
             font-size: 60px;
+            background-color: whitesmoke;
         }
+        .modal-content{
+            background-color:#F8F0E5; 
+        }
+        .text-bold{
+            font-weight: bold;
+        }
+        h3{
+            color: white;
+        }
+        .btn-secondary{
+            background-color: #4b3832;
+        }
+        
     </style>
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
@@ -55,13 +69,21 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./services.html">Services</a>
+                <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-5" href="./services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                  <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                  <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                  <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
@@ -85,28 +107,28 @@
    <div class="container mt-5">
     <div class="row">
         <div class="col-md-4 mb-4">
-            <div class="h-100 d-flex flex-column bg-dark text-white p-4" style="background-image: url('https://img.freepik.com/free-photo/abstract-dark-blue-futuristic-digital-grid-background_53876-104051.jpg?t=st=1724842083~exp=1724845683~hmac=5c7ec60985618f0e4ac695cad8cf9e9cc7684ef435def80c6fc00eca652f08ca&w=1060'); background-size: cover; background-position: center;">
+            <div class="h-100 d-flex flex-column text-white p-4" style="background-color: #4b3832;">
                 <h3 class="mb-3 text-center">Career Enhancement Programs</h3>
                 <p class="text-start">At Fincasa HR, we recognize that finding the ideal job extends beyond a mere resume. That's why we are elated to introduce our comprehensive psychometric assessments, meticulously designed for job seekers like you!</p>
-                <a href="#" class="mt-auto text-center text-light" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                     Learn More >
                 </a>
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="h-100 d-flex flex-column bg-dark text-white p-4" style="background-image: url('https://img.freepik.com/free-photo/copper-icosahedron-pattern-black_53876-95598.jpg?uid=R160820556&ga=GA1.1.382513588.1724658870&semt=ais_hybrid'); background-size: cover; background-position: center;">
+            <div class="h-100 d-flex flex-column text-white p-4" style="background-color: #4b3832;">
                 <h3 class="mb-3 text-center">Cultural Immersion Programs</h3>
                 <p class="text-start">Fincasa HR offers customized Cultural Immersion Programs to expand your global perspective. Our International Educational Cultural Immersion Programs immerse participants in diverse cultures and education systems worldwide. These structured initiatives foster cross-cultural understanding, global mindsets, and personal growth.</p>
-                <a href="#" class="mt-auto text-center text-light" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                     Learn More >
                 </a>
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="h-100 d-flex flex-column bg-dark text-white p-4" style="background-image: url('./images/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg'); background-size: cover; background-position: center;">
-                <h3 class="mb-3 text-light text-center">Masterclass and Workshops</h3>
+            <div class="h-100 d-flex flex-column text-white p-4" style="background-color: #4b3832;">
+                <h3 class="mb-3 text-center">Masterclass and Workshops</h3>
                 <p class="text-start text-light">In today's competitive environment, leadership is a strategic asset. Our leadership development program cultivates essential leadership qualities, empowering your team to inspire, innovate, and succeed.</p>
-                <a href="#" class="mt-auto text-center text-light" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <a href="#" class="mt-auto text-center text-light btn btn-primary" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                     Learn More >
                 </a>
             </div>
@@ -123,30 +145,30 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-            <p>Are you ready to elevate your career to new heights?</p>
+            <p class="text-bold">Are you ready to elevate your career to new heights?</p>
 
             <p>At Fincasa HR, we recognize that finding the ideal job extends beyond a mere resume. That's why we are elated to introduce our comprehensive psychometric assessments, meticulously designed for job seekers like you!</p>
 
             <p>In today's competitive job landscape, employers seek not only technical expertise but also valuable cultural fit and strong interpersonal skills in their candidates. Our Psychometric tests serve as invaluable tools for companies to assess various facets of a candidate's personality, cognitive abilities, and aptitude.</p>
 
-            <p>Discover Your Strengths and Skills</p>
+            <p class="text-bold">Discover Your Strengths and Skills</p>
 
             <p>Our assessments delve deeper than conventional methods, exploring your personality traits, strengths, and competencies. Uncover hidden talents and areas for growth to excel in your chosen career path.</p>
 
-            <p>Gain Valuable Insights: Understand Your Work Style</p>
+            <p class="text-bold">Gain Valuable Insights: Understand Your Work Style</p>
 
             <p>Acquire a profound understanding of your work preferences and communication style. Discover how you excel in different environments and teams, empowering you to make informed career decisions.</p>
 
-            <p>Personalized Guidance: Navigate Your Career Path</p>
+            <p class="text-bold">Personalized Guidance: Navigate Your Career Path</p>
 
             <p>Benefit from the expertise of our seasoned HR professionals. We offer actionable insights and tailored recommendations to help you align your career goals with opportunities that best match your profile.</p>
 
-            <p>Propel Your Career Forward: Stand Out from the Crowd</p>
+            <p class="text-bold">Propel Your Career Forward: Stand Out from the Crowd</p>
 
             <p>Equip yourself with invaluable insights to stand out in today's competitive job market. Showcase your strengths and capabilities with confidence, positioning yourself as the ideal candidate for your dream job. Don't leave your career to chance. Take the first step towards unlocking your full potential with our psychometric assessments today!</p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
     </div>
 </div>
@@ -163,12 +185,12 @@
             <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <p>At Fincasa HR, we specialize in crafting bespoke Cultural Immersion Programs to broaden your horizons. An International Educational Cultural Immersion Program is a structured initiative designed to provide participants with firsthand experience and insights into diverse cultures and educational systems worldwide. These programs aim to promote cross-cultural awareness, global citizenship and personal and professional development.</p>
 
-                <p>Break Down Barriers, Build Bridges</p>  
+                <p class="text-bold">Break Down Barriers, Build Bridges</p>  
                 
                 <p>In today's interconnected world, cultural fluency is an esential skill. Our Cultural Immersion Programs break down cultural barriers and cultivate a sense of understanding, respect and collaboration among students from varied backgrounds. Are you ready to embark on a transformative journey? Partner with Fincasa HR Consulting and unlock the full potential of your global talent. Contact us today!</p> 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -198,7 +220,7 @@
             <p>Contact us today to discover how our Leadership Training can elevate your capacity to drive sustainable success. Let's embark on this transformative journey together!</p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
     </div>
 </div>
@@ -208,7 +230,7 @@
 
     <!--footer-->
     <div class="container-fluid px-0">
-        <footer class="bg-dark py-3 my-0">
+        <footer class="py-3 my-0">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
             <li class="nav-item"><a href="./services.html" class="nav-link px-2 text-white">Services</a></li>
