@@ -60,54 +60,46 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./services.html"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./testimonials.html"
-                >Testimonials</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5" href="./contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-5" href="./services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                  <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                  <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                  <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!--body-->
     <div class="container bg-image my-3">
-      <h1 class="text-center">Employer Services</h1>
+      <h1 class="text-center" style="background-color: whitesmoke;">Employer Services</h1>
     </div>
     <div class="container">
-      <h5 class="text-center">
+      <h5 class="text-start">
         At Fincasa HR, we are committed to empowering employers to build a
         talented and motivated workforce. Our comprehensive solutions are
         designed to enhance your recruitment process, improve employee
@@ -161,7 +153,7 @@
         <div class="col-lg-6 section-text text-left order-lg-1">
           <h2 class="mb-4">Cultural Immersion Programs</h2>
           <p>
-            FINCASA HR specializes in crafting bespoke Cultural Immersion
+            Fincasa HR specializes in crafting bespoke Cultural Immersion
             Programs tailored for universities seeking to broaden their
             horizons. Our programs go beyond traditional study abroad
             initiatives, fostering authentic connections and empowering students
@@ -258,7 +250,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--footer-->
     <div class="container-fluid px-0">
-      <footer class="bg-dark py-3 my-0">
+      <footer class="py-3 my-0">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="./index.html" class="nav-link px-2 text-white">Home</a>
