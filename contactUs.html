@@ -43,7 +43,7 @@
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3832;">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo">
@@ -54,13 +54,21 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./services.html">Services</a>
+                <a class="nav-link text-white fs-5" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-5" href="./services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./employer.html">Employer</a></li>
+                  <li><a class="dropdown-item" href="./candidate.html">Candidate</a></li>
+                  <li><a class="dropdown-item" href="./universities.html">Universities</a></li>
+                  <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fs-5" href="./testimonials.html">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="./aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fs-5" href="./contactUs.html">Contact Us</a>
@@ -82,8 +90,9 @@
                         <label for="user-type" class="form-label">Are you a Candidate or Employer?</label>
                         <select class="form-select" id="user-type">
                             <option selected>Select an option</option>
-                            <option value="candidate">Candidate</option>
                             <option value="employer">Employer</option>
+                            <option value="candidate">Candidate</option>
+                            <option value="employer">University</option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -139,7 +148,7 @@
                             <div class="card-body">
                                 <i class="fas fa-envelope card-icon"></i>
                                 <h5 class="card-title">Email</h5>
-                                <p class="card-text">info@fincasahr.com</p>
+                                <p class="card-text">hr@fincasahr.com</p>
                             </div>
                         </div>
                     </div>
@@ -148,7 +157,11 @@
                             <div class="card-body">
                                 <i class="fas fa-globe card-icon"></i>
                                 <h5 class="card-title">Location</h5>
-                                <p class="card-text">Visit us at our headquarters or online.</p>
+                                <p class="card-text">Visit us at our headquarters.</p>
+                                <!-- Embed Google Maps -->
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.119697393307!2d55.15372077520807!3d25.097809177775048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43adc52d5c97%3A0xf14765c54bd66b60!2sFincasa%20Corporate%20Services%20Provider%20LLC!5e0!3m2!1sen!2sae!4v1724923806038!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +173,7 @@
     
     <!--footer-->
     <div class="container-fluid px-0">
-        <footer class="bg-dark py-3 my-0">
+        <footer class="py-3 my-0">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
             <li class="nav-item"><a href="./services.html" class="nav-link px-2 text-white">Services</a></li>
