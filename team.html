@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team-Fincasa HR</title>
+    <link rel="icon" type="image/png" href="./FHR_LOGOG-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .logo {
+        height: 70px;
+      }
+
+      .montserrat-font {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+        
+        .team-member img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .team-member h5 {
+            margin-top: 15px; /* Space above name */
+        }
+    </style>
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #4b3832"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fs-5"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./employer.html">Employer</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./candidate.html">Candidate</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./universities.html"
+                    >Universities</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./services.html"
+                    >All Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member text-center p-3">
+                    <img src="https://via.placeholder.com/300" alt="Team Member" class="img-fluid">
+                    <h5>Varis Syed</h5>
+                    <p class="text-muted">CEO</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member text-center p-3">
+                    <img src="https://via.placeholder.com/300" alt="Team Member" class="img-fluid">
+                    <h5>Shoaib Sadiq</h5>
+                    <p class="text-muted">Head of Partnerships & Business Development</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member text-center p-3">
+                    <img src="https://via.placeholder.com/300" alt="Team Member" class="img-fluid">
+                    <h5>Romiya Das</h5>
+                    <p class="text-muted">Marketing & Communications Executive</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member text-center p-3">
+                    <img src="https://via.placeholder.com/300" alt="Team Member" class="img-fluid">
+                    <h5>Jewel</h5>
+                    <p class="text-muted">Administrator</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--footer-->
+    <footer class="py-3" style="background-color: #4b3832">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link px-2 text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link px-2 text-white">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./aboutUs.html" class="nav-link px-2 text-white">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./testimonials.html" class="nav-link px-2 text-white">Testimonials</a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center mb-4">
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/fincasahr/about/" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <!-- YouTube -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/fincasahr?igsh=MXJubG0yMjZyeTl5" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>   
+            </div>
+            <p class="text-center text-white">© Fincasa HR</p>
+        </div>
+        <!-- Back to Top Button -->
+        <a href="#" class="btn btn-light rounded-circle" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show or hide the "Back to Top" button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#backToTop').fadeIn();
+            } else {
+                $('#backToTop').fadeOut();
+            }
+        });
+    
+        // Smooth scroll to top
+        $('#backToTop').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 100);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
