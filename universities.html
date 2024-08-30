@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universities</title>
+    <link rel="icon" type="image/png" href="./FHR_LOGOG-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .logo {
+        height: 70px;
+      }
+      .lead {
+        font-size: 25px;
+      }
+      .montserrat-font {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .logo {
+        height: 70px;
+      }
+      .bg-image {
+        position: relative; /* Create a positioning context for the text */
+        background-image: url("https://img.freepik.com/free-photo/building_1127-3188.jpg?t=st=1724995840~exp=1724999440~hmac=db74d84648cbe22807ed79fd317847d34edc7fff69482d69d6187a51bcaccfb3&w=1060"); /* Replace with your image path */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        color: whitesmoke; /* Set text color to white for contrast */
+        padding: 50px 0; /* Add padding for spacing */
+        height: 300px; /* Set a height for the container */
+      }
+
+      .bg-image h1 {
+        position: absolute; /* Position the text absolutely */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust position to truly center */
+        font-weight: bold; /* Make the heading text bold */
+        text-align: center; /* Center the text */
+        font-size: 60px;
+        background-color: whitesmoke;
+      }
+      .modal-content {
+        background-color: #f8f0e5;
+      }
+      .text-bold {
+        font-weight: bold;
+      }
+      h3 {
+        color: white;
+      }
+      .btn-primary-zy {
+        background-color: #c4ac80; /* Set the background color */
+        border-color: #c4ac80; /* Set the border color */
+        color: white; /* Set the text color */
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #4b3832"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo" src="./FHR_LOGOG-removebg-preview.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fs-5"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./employer.html">Employer</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./candidate.html">Candidate</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./universities.html"
+                    >Universities</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./services.html"
+                    >All Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="./contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <div class="container bg-image my-3">
+      <h1 class="text-center">University Services</h1>
+    </div>
+    <div class="container">
+      <h5 class="text-left py-3">
+        At Fincasa HR, we are committed to empowering candidates to accomplish
+        their career aspirations. Our comprehensive suite of services equips you
+        with the tools, resources, and guidance necessary to navigate the job
+        market and secure rewarding career opportunities.
+      </h5>
+    </div>
+    <!--features-->
+    <!-- Button trigger modal -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div
+            class="h-100 d-flex flex-column text-white p-4"
+            style="background-color: #4b3832"
+          >
+            <h3 class="mb-3 text-center">Career Enhancement Programs</h3>
+            <p class="text-start">
+              At Fincasa HR, we recognize that finding the ideal job extends
+              beyond a mere resume. That's why we are elated to introduce our
+              comprehensive psychometric assessments, meticulously designed for
+              job seekers like you!
+            </p>
+            <a
+              href="#"
+              class="mt-auto text-center text-light btn btn-primary-zy"
+              style="text-decoration: none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+            >
+              Learn More >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div
+            class="h-100 d-flex flex-column text-white p-4"
+            style="background-color: #4b3832"
+          >
+            <h3 class="mb-3 text-center">Cultural Immersion programs</h3>
+            <p class="text-start">
+              At Fincasa HR, we specialize in crafting bespoke Cultural
+              Immersion Programs to broaden your horizons. An International
+              Educational Cultural Immersion Program is a structured initiative
+              designed to provide participants with firsthand experience and
+              insights into diverse cultures and educational systems worldwide.
+              These programs aim to promote cross-cultural awareness, global
+              citizenship and personal and professional development.
+            </p>
+            <a
+              href="#"
+              class="mt-auto text-center text-light btn btn-primary-zy"
+              style="text-decoration: none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              Learn More >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div
+            class="h-100 d-flex flex-column text-white p-4"
+            style="background-color: #4b3832"
+          >
+            <h3 class="mb-3 text-center">Masterclass and Workshops</h3>
+            <p class="text-start text-light">
+              In today's competitive environment, leadership is a strategic
+              asset. Our leadership development program cultivates essential
+              leadership qualities, empowering your team to inspire, innovate,
+              and succeed.
+            </p>
+            <a
+              href="#"
+              class="mt-auto text-center text-light btn btn-primary-zy"
+              style="text-decoration: none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              Learn More >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">
+              Career Enhancement Programs
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="max-height: 400px; overflow-y: auto">
+            <p class="text-bold">
+              Are you ready to elevate your career to new heights?
+            </p>
+
+            <p>
+              At Fincasa HR, we recognize that finding the ideal job extends
+              beyond a mere resume. That's why we are elated to introduce our
+              comprehensive psychometric assessments, meticulously designed for
+              job seekers like you!
+            </p>
+
+            <p>
+              In today's competitive job landscape, employers seek not only
+              technical expertise but also valuable cultural fit and strong
+              interpersonal skills in their candidates. Our Psychometric tests
+              serve as invaluable tools for companies to assess various facets
+              of a candidate's personality, cognitive abilities, and aptitude.
+            </p>
+
+            <p class="text-bold">Discover Your Strengths and Skills</p>
+
+            <p>
+              Our assessments delve deeper than conventional methods, exploring
+              your personality traits, strengths, and competencies. Uncover
+              hidden talents and areas for growth to excel in your chosen career
+              path.
+            </p>
+
+            <p class="text-bold">
+              Gain Valuable Insights: Understand Your Work Style
+            </p>
+
+            <p>
+              Acquire a profound understanding of your work preferences and
+              communication style. Discover how you excel in different
+              environments and teams, empowering you to make informed career
+              decisions.
+            </p>
+
+            <p class="text-bold">
+              Personalized Guidance: Navigate Your Career Path
+            </p>
+
+            <p>
+              Benefit from the expertise of our seasoned HR professionals. We
+              offer actionable insights and tailored recommendations to help you
+              align your career goals with opportunities that best match your
+              profile.
+            </p>
+
+            <p class="text-bold">
+              Propel Your Career Forward: Stand Out from the Crowd
+            </p>
+
+            <p>
+              Equip yourself with invaluable insights to stand out in today's
+              competitive job market. Showcase your strengths and capabilities
+              with confidence, positioning yourself as the ideal candidate for
+              your dream job. Don't leave your career to chance. Take the first
+              step towards unlocking your full potential with our psychometric
+              assessments today!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">
+              Cultural Immersion Programs
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="max-height: 400px; overflow-y: auto">
+            <strong>Break Down Barriers, Build Bridges</strong>
+
+            <p>
+              In today's interconnected world, cultural fluency is an esential
+              skill. Our Cultural Immersion Programs break down cultural
+              barriers and cultivate a sense of understanding, respect and
+              collaboration among students from varied backgrounds.
+            </p>
+            <p>
+              Are you ready to embark on a transformative journey? Partner with
+              Fincasa HR Consulting and unlock the full potential of your global
+              talent. Contact us today!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel3">
+              Masterclass and Workshops
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="max-height: 400px; overflow-y: auto">
+            <p>
+              In the competitive landscape of today, effective leadership is not
+              merely a skill; it is a strategic advantage. Our comprehensive
+              program is designed to cultivate the essential qualities of
+              impactful leadership, equipping your team members with the tools
+              they need to inspire, innovate, and drive success.
+            </p>
+
+            <p><strong>What Our Program Offers:</strong></p>
+
+            <p>
+              1. <strong>Expert Guidance:</strong> Led by seasoned HR
+              professionals and industry leaders who impart real-world insights
+              and best practices.
+            </p>
+
+            <p>
+              2. <strong>Interactive Workshops:</strong> Engaging sessions that
+              foster collaboration, critical thinking, and practical skill
+              development.
+            </p>
+
+            <p>
+              3. <strong>Continuous Support:</strong> Post-training mentorship
+              and resources to reinforce learning and sustain momentum.
+            </p>
+
+            <p>Invest in your growth and watch yourself soar to new heights!</p>
+
+            <p>
+              Contact us today to discover how our Leadership Training can
+              elevate your capacity to drive sustainable success. Let's embark
+              on this transformative journey together!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+     <!--footer-->
+     <footer class="py-3" style="background-color: #4b3832">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link px-2 text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link px-2 text-white">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./aboutUs.html" class="nav-link px-2 text-white">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./testimonials.html" class="nav-link px-2 text-white">Testimonials</a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center mb-4">
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/fincasahr/about/" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <!-- YouTube -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/fincasahr?igsh=MXJubG0yMjZyeTl5" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>   
+            </div>
+            <p class="text-center text-white">© Fincasa HR</p>
+        </div>
+        <!-- Back to Top Button -->
+        <a href="#" class="btn btn-light rounded-circle" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
