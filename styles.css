@@ -5,7 +5,9 @@ body {
   font-family: 'Roboto', sans-serif; /* Apply Roboto for body text */
   font-weight: 400;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; /* Apply Montserrat for headings */
   font-weight: 400 !important;
