@@ -38,6 +38,9 @@
       .card{
         background-color:#4b3832;
       }
+      .modal-body{
+        background-color: #F8F0E5;
+      }
     </style>
   </head>
   <body>
@@ -76,43 +79,99 @@
           </div>
         </div>
       </nav>
-    <div class="container mt-5">
-      <h2 class="text-center mb-4">Testimonials</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <video width="100%" height="215" controls muted>
-              <source src="./vids/VID-20240827-WA0000.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <video width="100%" height="215" controls muted data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <source src="./vids/VID-20240827-WA0000.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <video width="100%" height="215" controls muted data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <source src="./vids/VID-20240827-WA0001.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <video width="100%" height="215" controls muted data-bs-toggle="modal" data-bs-target="#videoModal3">
+                        <source src="./vids/VID-20240827-WA0002.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <video width="100%" height="215" controls muted data-bs-toggle="modal" data-bs-target="#videoModal4">
+                        <source src="./vids/VID-20240827-WA0003 1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <video width="100%" height="215" controls muted>
-              <source src="./vids/VID-20240827-WA0001.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="./vids/VID-20240827-WA0000.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <video width="100%" height="215" controls muted>
-              <source src="./vids/VID-20240827-WA0002.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+    </div>
+    
+    <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="./vids/VID-20240827-WA0001.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <video width="100%" height="215" controls muted>
-              <source src="./vids/VID-20240827-WA0003 1.mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+    </div>
+    
+    <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="./vids/VID-20240827-WA0002.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
+    </div>
+    
+    <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="./vids/VID-20240827-WA0003 1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div class="container-fluid px-0">
        <!--footer-->
