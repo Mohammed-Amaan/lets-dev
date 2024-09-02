@@ -47,4 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 footer{
   background-color: #4b3832;
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  font-family: 'Montserrat', sans-serif;
 }
