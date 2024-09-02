@@ -23,20 +23,37 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="styles.css">
     <style>
-
-
-      main {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px;
-      }
-
-      section {
-        margin-bottom: 40px;
-      }
       .logo {
         height: 70px;
       }
+      main{
+        width: 100%;
+    height: auto;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+     position: relative;
+     background-color: black;
+      }
+      main::before{
+    background-image: url('./images/modern-minimalist-office.jpg');
+    background-size: cover;
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: 0.25;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    background-color: #c4ac80;
+    display: inline-block;
+    color: black;
+    padding: 3px;
+    font-weight: 600 !important;
+}
+
     </style>
   </head>
   <body>
@@ -76,71 +93,76 @@
         </div>
     </nav>
     <main>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Fincasa HR Consulting stands as a distinguished leader dedicated to
-          delivering unparalleled talent solutions and career enhancement
-          services. Our expertise spans a variety of specialized areas,
-          including Executive Search, Talent Recruiting, Cultural Immersion
-          Programs, Masterclass Sessions and Career Development Initiatives. We
-          are committed to addressing the unique needs of both employers and
-          candidates, ensuring a harmonious alignment between exceptional talent
-          and outstanding career opportunities.
-          <br> 
-          <br>
-          Our mission is to bridge the
-          chasm between top-tier professionals and remarkable career pathways,
-          fostering a dynamic and thriving workforce. prosperous workforce. At
-          Fincasa HR Consulting, we believe that the right talent is the
-          cornerstone of any successful organization. Therefore, we strive to
-          cultivate an environment where individuals can thrive, develop, and
-          realize their full potential.
-        </p>
-      </section>
-      <section>
-        <h2>Our Vision</h2>
-        <p>
-          Our vision at Fincasa HR is to cultivate a dynamic and
-          inclusive global workforce where every individual and organization can
-          realize their full potential. We aspire to be the premier provider of
-          innovative HR solutions, fostering an environment where professional
-          growth and organizational success are inextricably linked. By
-          empowering candidates and supporting employers, we aim to build a
-          future where talent and opportunity seamlessly converge, leading to
-          sustained growth and excellence for all.
-        </p>
-      </section>
-
-      <section>
-        <h2>Our Comittment</h2>
-        <p>
-            <h4>To Employers</h4>
-            We are dedicated to assisting employers in building a talented and motivated workforce. Our solutions are designed to enhance your recruitment processes, improve employee retention, and support your organization's growth and success.
-            <h4>To Candidates</h4>
-            We are committed to empowering candidates to achieve their career aspirations. Our services provide the tools, resources, and guidance necessary to navigate the job market and secure rewarding career opportunities.
-            <h4>To Universities</h4>
-            We empower students with the guidance, skills, and opportunities essential for launching successful careers. By partnering with universities, we offer personalized career coaching, industry insights, and strategic job placements, ensuring a smooth transition from education to the professional world. Our goal is to equip students with the confidence and connections needed to excel in their chosen paths.
-        </p>
-      </section>
-      <section>
-        <h2>Why Choose FINCASA HR?</h2>
-        <p>
-          At Fincasa HR Consulting, we are dedicated to empowering your HR and
-          career development journey. Don’t wait to elevate your future – reach
-          out to us now! Discover how our tailored services can help you achieve
-          your goals and transform your aspirations into reality.
-        </p>
-      </section>
-      <section>
-        <h2>Unlock your potential today</h2>
-        <p>
-          At Fincasa HR Consulting, we are dedicated to empowering your HR and
-          career development journey. Don’t wait to elevate your future – reach
-          out to us now! Discover how our tailored services can help you achieve
-          your goals and transform your aspirations into reality.
-        </p>
-      </section>
+        <div class="container mt-5 about-us">
+            <h2>About Us</h2>
+            <p class="text-white">
+                Fincasa HR Consulting stands as a distinguished leader dedicated to
+                delivering unparalleled talent solutions and career enhancement
+                services. Our expertise spans a variety of specialized areas,
+                including Executive Search, Talent Recruiting, Cultural Immersion
+                Programs, Masterclass Sessions, and Career Development Initiatives. We
+                are committed to addressing the unique needs of both employers and
+                candidates, ensuring a harmonious alignment between exceptional talent
+                and outstanding career opportunities.
+                <br><br>
+                Our mission is to bridge the
+                chasm between top-tier professionals and remarkable career pathways,
+                fostering a dynamic and thriving workforce. At Fincasa HR Consulting, we believe that the right talent is the
+                cornerstone of any successful organization. Therefore, we strive to
+                cultivate an environment where individuals can thrive, develop, and
+                realize their full potential.
+            </p>
+        </div>
+    
+        <div class="container my-2">
+            <h2>Our Vision</h2>
+            <p class="text-white">
+                Our vision at Fincasa HR is to cultivate a dynamic and
+                inclusive global workforce where every individual and organization can
+                realize their full potential. We aspire to be the premier provider of
+                innovative HR solutions, fostering an environment where professional
+                growth and organizational success are inextricably linked. By
+                empowering candidates and supporting employers, we aim to build a
+                future where talent and opportunity seamlessly converge, leading to
+                sustained growth and excellence for all.
+            </p>
+        </div>
+    
+        <div class="container my-2">
+            <h2 class="mb-4">Our Commitment</h2>
+            <h4 class="text-white">To Employers</h4>
+            <p class="text-white">
+                We are dedicated to assisting employers in building a talented and motivated workforce. Our solutions are designed to enhance your recruitment processes, improve employee retention, and support your organization's growth and success.
+            </p>
+            <h4 class="text-white">To Candidates</h4>
+            <p class="text-white">
+                We are committed to empowering candidates to achieve their career aspirations. Our services provide the tools, resources, and guidance necessary to navigate the job market and secure rewarding career opportunities.
+            </p>
+            <h4 class="text-white">To Universities</h4>
+            <p class="text-white">
+                We empower students with the guidance, skills, and opportunities essential for launching successful careers. By partnering with universities, we offer personalized career coaching, industry insights, and strategic job placements, ensuring a smooth transition from education to the professional world. Our goal is to equip students with the confidence and connections needed to excel in their chosen paths.
+            </p>
+        </div>
+    
+        <div class="container my-2">
+            <h2>Why Choose FINCASA HR?</h2>
+            <p class="text-white">
+                At Fincasa HR Consulting, we are dedicated to empowering your HR and
+                career development journey. Don’t wait to elevate your future – reach
+                out to us now! Discover how our tailored services can help you achieve
+                your goals and transform your aspirations into reality.
+            </p>
+        </div>
+    
+        <div class="container my-2">
+            <h2>Unlock Your Potential Today</h2>
+            <p class="text-white">
+                At Fincasa HR Consulting, we are dedicated to empowering your HR and
+                career development journey. Don’t wait to elevate your future – reach
+                out to us now! Discover how our tailored services can help you achieve
+                your goals and transform your aspirations into reality.
+            </p>
+        </div>
     </main>
     <div class="container-fluid px-0">
         <footer class="py-3" style="background-color: #4b3832">
