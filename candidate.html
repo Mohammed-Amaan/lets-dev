@@ -36,14 +36,23 @@
 }
 .bg-image {
             position: relative; /* Create a positioning context for the text */
-            background-image: url('./images/male-journalist-doing-his-job.jpg'); /* Replace with your image path */
+            /*background-image: url('./images/man-showing-his-workmates-documents.jpg'); /* Replace with your image path */
             background-size: cover; /* Cover the entire container */
             background-position: center; /* Center the image */
             color: whitesmoke; /* Set text color to white for contrast */
             padding: 50px 0; /* Add padding for spacing */
             height: 500px; /* Set a height for the container */
+            background-color: black;
+            place-items: center;
         }
-
+.bg-image::before{
+    background-image: url('./images/man-showing-his-workmates-documents.jpg');
+    background-size: cover;
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+}
         .bg-image h1 {
             position: absolute; /* Position the text absolutely */
             top: 50%; /* Center vertically */
@@ -52,7 +61,8 @@
             font-weight: bold; /* Make the heading text bold */
             text-align: center; /* Center the text */
             font-size: 60px;
-            background-color: whitesmoke;
+            isolation: isolate;
+            color: white;
         }
         .modal-content{
             background-color:#F8F0E5; 
